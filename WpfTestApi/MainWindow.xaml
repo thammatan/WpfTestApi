@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfTestApi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTestApi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="preBtn" Content="Previous" Padding="15" Margin="15" Click="preBtn_Click"/>
+            <Button x:Name="sunBtn" Content="Sun Information" Padding="15" Margin="15" Click="sunBtn_Click"/>
+            <Button x:Name="nextBtn" Content="Next" Padding="15" Margin="15" Click="nextBtn_Click"/>
+        </StackPanel>
+        <Image Grid.Row="1" x:Name="Img" Margin="200,100,200,20"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="200,40.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="400" Height="45"/>
+
+    </Grid>
+</Window>
